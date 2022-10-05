@@ -1,0 +1,76 @@
+:root {
+  --color-dark: #292929;
+  --color-secondary-dark: #199bfe;
+  --color-secondary-light: #35a6ff;
+  --color-white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  border-bottom: 5px solid var(--color-secondary-dark);
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.navbar li ul {
+  background-color: var(--color-secondary-dark);
+  min-width: 200px;
+  position: absolute;
+  display: none;
+  box-shadow: 2px 2px 7px;
+}
+
+.navbar li ul li {
+  position: relative;
+}
+
+.navbar__list-first {
+  display: flex;
+  justify-self: center;
+  background-color: var(--color-dark);
+  z-index: 1;
+}
+
+.navbar__list-second {
+  z-index: 2;
+}
+
+.navbar__list-third {
+  z-index: 3;
+  left: 100%;
+  top: calc(100%-50px);
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--color-white);
+  padding: 0.25em 1em;
+  min-height: 50px;
+}
+
+.navbar a > span:last-of-type {
+  margin-left: 0.5em;
+}
+
+.navbar a:hover {
+  background-color: var(--color-secondary-light);
+}
+
+.navbar .active {
+  background-color: var(--color-secondary-dark);
+}
+
+.navbar ul > li:hover > ul {
+  display: block;
+}
