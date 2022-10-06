@@ -45,19 +45,18 @@
 
 .navbar__list-second {
   z-index: 2;
-  top: calc(100% + 5px);
 }
 
 .navbar__list-third {
   z-index: 3;
   left: 100%;
-  top: calc(100% - 62px);
+  top: calc(100% - 61px);
 }
 
 .navbar__list-fourth {
   z-index: 4;
   left: 100%;
-  top: calc(100% - 62px);
+  top: calc(100% - 61px);
 }
 
 .navbar a {
