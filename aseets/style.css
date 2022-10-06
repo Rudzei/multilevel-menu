@@ -20,12 +20,16 @@
   position: relative;
 }
 
+.navbar > ul {
+  padding-left: 100px;
+}
+
 .navbar li ul {
   background-color: var(--color-secondary-dark);
   min-width: 200px;
   position: absolute;
   display: none;
-  box-shadow: 2px 2px 7px;
+  box-shadow: 1px 1px 5px var(--color-secondary-dark);
 }
 
 .navbar li ul li {
@@ -41,26 +45,30 @@
 
 .navbar__list-second {
   z-index: 2;
+  top: calc(100% + 5px);
 }
 
 .navbar__list-third {
   z-index: 3;
   left: 100%;
-  top: calc(100%-50px);
+  top: calc(100% - 62px);
+}
+
+.navbar__list-fourth {
+  z-index: 4;
+  left: 100%;
+  top: calc(100% - 62px);
 }
 
 .navbar a {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 0.5em;
   text-decoration: none;
   color: var(--color-white);
-  padding: 0.25em 1em;
+  padding: 1.35em 1.25em;
   min-height: 50px;
-}
-
-.navbar a > span:last-of-type {
-  margin-left: 0.5em;
 }
 
 .navbar a:hover {
